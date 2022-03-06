@@ -1,0 +1,110 @@
+body {
+    margin: auto;
+    background: fixed;
+    background-color: #f4e7dd;
+  }
+.title {
+    margin: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 30px;
+    border: 2px solid black;
+    font-family: clifton;
+    text-align: center;
+  }
+  
+.container {
+    width: 100%;
+    margin: 16px auto 0;
+    display: flex;
+    justify-content: center;
+  }
+.coming-soon {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    color: black;
+    font-family: aktiv-grotesk, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 16px;
+}
+
+
+.form {
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    font-family: aktiv-grotesk, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.label-name {
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  color: black;
+  margin-bottom: 8px;
+}
+
+.email-input-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.email-input {
+  background-color: #ba888b;
+  border: 2px solid black;
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 100px;
+  min-width:230px;
+  margin-right: 8px;
+}
+
+.email-input::placeholder {
+  color: #ffe4e0;
+}
+
+.button {
+  background-color: #a35a6b;
+  border: 2px solid black;
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 100px;
+  align-self: center;
+  margin-top: 10px;
+}
+
+.page-container {
+  width:80%;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 659px) {
+  .page-container {
+    width:40%;
+  }
+  .email-input-group {
+    flex-direction: row;
+  }
+
+  .button {
+    margin-top: 0px;
+  }
+}
