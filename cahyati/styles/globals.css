@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "clifton";
+  src: url("/fonts/clifton.ttf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
 html,
 body {
   padding: 0;
@@ -106,6 +114,8 @@ font-size: 16px;
 border-radius: 100px;
 align-self: center;
 margin-top: 10px;
+-webkit-appearance: none;
+
 }
 
 .page-container {
