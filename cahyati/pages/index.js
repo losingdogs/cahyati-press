@@ -1,8 +1,26 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import axios from 'axios'
+import { useForm } from 'react-hook-form'
+import { useState } from 'react'
 
 export default function Home() {
+
+  const [submitted, setSubmitted] = useState(false)
+  const { handleSubmit, register, reset } = useForm();
+
+  async function submit(data) {
+
+    console.log({ data })
+
+    await axios.post('/api/email', {
+      email: data.email
+    })
+
+    setSubmitted(true)
+  }
+
   return (
     <div className={styles.container}>
       <Head>
@@ -24,19 +42,28 @@ export default function Home() {
             <p>Cahyati Press is a publishing and printing experiment.¶
               It is an attempt at taking the pressure off of bookmaking; A long distance collaboration between
               Bali and Brisbane by two long-time friends, Avi and Kat.¶
-              The press is named after Avi's late grandmother as an homage to the founders' Cirebonese roots.¶</p>
+              The press is named after Avi&apos;s late grandmother as an homage to the founders&apos; Cirebonese roots.¶</p>
             <p>Check back soon.</p>
           </div>
         </div>
         <div className="form">
-          <form action="/action_page.php">
-            <label htmlFor="lname" className="label-name">Let's stay in touch:</label>
-            <div className="email-input-group">
-              <input type="text" className="email-input" id="lname" name="lname"
-                placeholder="friend_of_cahyati@gmail.com" />
-              <input type="submit" className="button" value="ENTER" />
-            </div>
-          </form>
+          {
+            submitted && (
+              <p>Thanks! We'll keep you updated.</p>
+            )
+          }
+          {
+            !submitted && (
+              <form onSubmit={handleSubmit(submit)}>
+                <label htmlFor="email" className="label-name">Let&apos;s stay in touch:</label>
+                <div className="email-input-group">
+                  <input type="text" className="email-input" id="email" {...register('email')}
+                    placeholder="friend_of_cahyati@gmail.com" />
+                  <input type="submit" className="button" value="ENTER" />
+                </div>
+              </form>
+            )}
+
         </div>
       </div>
     </div >
