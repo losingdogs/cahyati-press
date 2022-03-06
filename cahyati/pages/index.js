@@ -45,7 +45,7 @@ export default function Home() {
         <div className="coming-soon">
           <div className="about">
             <p>Cahyati Press is a publishing and printing experiment.¶
-              It is an attempt at taking the pressure off of bookmaking; A long distance collaboration between
+              It is an attempt at taking the pressure off of bookmaking; a long distance collaboration between
               Bali and Brisbane by two long-time friends, Avi and Kat.¶
               The press is named after Avi&apos;s late grandmother as an homage to the founders&apos; Cirebonese roots.¶</p>
             <p>Check back soon.</p>
