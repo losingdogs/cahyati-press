@@ -46,15 +46,14 @@ export default function Home() {
           <div className="about">
             <p>Cahyati Press is a publishing and printing experiment.
               It is an attempt at taking the pressure off of bookmaking; a long distance collaboration between
-              Bali and Brisbane by two long-time friends, Avi and Kat.
-              The press is named after Avi&apos;s late grandmother as an homage to the founders&apos; Cirebonese roots.</p>
-            <p>Check back soon.</p>
+              Bali and Brisbane by two long-time friends, Avi and Kat.</p>
+            <p><i>Check back soon.</i></p>
           </div>
         </div>
         <div className="form">
           {
             submitted && (
-              <p>Thanks! We&apos;ll keep you updated.</p>
+              <p>Thanks! We&apos;ll keep you posted.</p>
             )
           }
           {
