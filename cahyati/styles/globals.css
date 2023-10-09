@@ -134,3 +134,7 @@ margin: 0 auto;
   margin-top: 0px;
 }
 }
+
+.link:hover{
+  color: #a35a6b;
+}

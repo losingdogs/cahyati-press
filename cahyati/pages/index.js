@@ -47,7 +47,11 @@ export default function Home() {
             <p>Cahyati Press is a publishing and printing experiment.
               It is an attempt at taking the pressure off of bookmaking; a long distance collaboration between
               Bali and Brisbane by two long-time friends, Avi and Kat.</p>
-            <p><i>Check back soon.</i></p>
+            <p><a href="https://instagram.com/cahyati.press" className="link" target='_blank'>Instagram</a> / <a href="http://cahyatipress.substack.com/" className="link" target='_blank'>Newsletter</a> / <a href="https://wa.me/6287811102900?text=I%27d%20like%20to%20make%20an%20appointment%20please" className="link" target='_blank'>Make an appointment</a></p>
+            <br/>
+            <p>COMING 10/23:</p>
+            <p>ACA & ICA IN PESTA KERAMAT</p>
+            <p>QUEERS SHOOT BACK! ESSAYS ON RADICAL QUEER CINEMA</p>
           </div>
         </div>
         <div className="form">
